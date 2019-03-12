@@ -24,7 +24,7 @@ nav {
 
 .logo-brand {
 	display: inline-block;
-	width: 9em;
+	width: 11em;
 	padding: 0;
 	margin-left: 0;
 	text-align: center;
@@ -36,7 +36,7 @@ nav {
 	margin-right: 1%;
 	border: 1px solid grey;
 	border-radius: 5px;
-	margin-left: 73.5%;
+	margin-left: 63.5%;
 	width: 5%;
 	padding: 2px 1px 0;
 	text-align: center;
@@ -217,14 +217,20 @@ h2 {
 
 .slide-unit-descript {
 	display: none;
-	width: 95%;
+	/*width: 95%;*/
 	height: 10em;
 	font-size: .7em;
 	line-height: 1.3em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	padding: .5% 2%;
+	/*overflow: hidden;
+	text-overflow: ellipsis;*/
+	/*padding: .5% 2%;*/
 }
+
+.slide-unit-descript p {
+    padding: .5% 5%;
+    white-space: pre-line;
+    text-align: justify;
+ }
 
 /*.slide-unit2 {
 	position: relative;
@@ -232,22 +238,33 @@ h2 {
     width: 22%;
 }*/
 
-.slide-unit > .slide-unit-content2 {
-	/*float: left;
-	margin-left: 20%;*/
-	/*right: 55%;*/
-	/*display: inline-block;*/
+.slide-unit:hover > .slide-unit-content {	
+	position: absolute;
+	width: 136%;
+    /*height: 100%;*/
+     z-index: 1; 
+    top: -115px;
+    left: -43px;
+}
+/*.slide-unit > .slide-unit-content2 {	
 	position: absolute;
 	width: 136%;
     height: 100%;
      z-index: 1; 
     top: -125px;
     left: -43px;
-}
+}*/
+/*float: left;
+	margin-left: 20%;*/
+	/*right: 55%;*/
+	/*display: inline-block;*/
 
-.slide-unit .slide-unit-content2 .slide-unit-descript {
+.slide-unit:hover .slide-unit-descript {
 	display: block;
 }
+/*.slide-unit .slide-unit-content2 .slide-unit-descript {
+	display: block;
+}*/
 /*.slide-unit:hover .slide-unit-content .slide-unit-descript {
 	display: inherit;
 }*/
