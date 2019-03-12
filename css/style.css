@@ -137,6 +137,10 @@ h2 {
 	overflow: hidden;*/
 }
 
+#close-btn1, #modal-img1, .close-lbl1 {
+	display: none;
+}
+
 .slide-unit-img {
 	/*line-height: 257px;*/
 	/*height: 200px;*/
