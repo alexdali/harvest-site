@@ -103,7 +103,7 @@ h2 {
 }
 
 .slide-unit {
-	/*position: relative;*/
+	position: relative;
 	display: inline-block;
 	width: 22%;
 	/*height: 500px;*/
@@ -139,7 +139,7 @@ h2 {
 
 .slide-unit-img {
 	/*line-height: 257px;*/
-	height: 200px;
+	/*height: 200px;*/
 }
 
 /*[name^="shadow-"]:checked ~ .root-slider .slide-unit-content-li > .slide-unit-img {
@@ -238,11 +238,11 @@ h2 {
 	/*right: 55%;*/
 	/*display: inline-block;*/
 	position: absolute;
-	width: 28%;
+	width: 136%;
     height: 100%;
-    /* z-index: 1; */
-    top: 176px;
-    left: 330px;
+     z-index: 1; 
+    top: -125px;
+    left: -43px;
 }
 
 .slide-unit .slide-unit-content2 .slide-unit-descript {
