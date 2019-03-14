@@ -110,9 +110,10 @@ h2 {
 	padding: 1% 1%;
 }
 
-.slide-unit:hover {	
+/*hover*/
+/*.slide-unit:hover {	
 	z-index: 1;
-}
+}*/
 
 /*[name^="shadow-"]:checked ~ .root-slider > .slide-unit {
 	width: 100%;
@@ -141,8 +142,11 @@ h2 {
 	overflow: hidden;*/
 }
 
-#close-btn, .modal-img-input, .close-lbl {
-	/*display: none;*/
+/*#close-btn, .modal-img-input, .close-lbl {
+	display: none;
+}*/
+.modal-chbox-input, .close-chbox-lbl {
+	display: none;
 }
 
 .modal-img-lbl {
@@ -176,15 +180,16 @@ h2 {
 	/*vertical-align: middle;*/
 }
 
+/*hover*/
 .slide-unit:hover .slide-unit-img > img {	
 	width: 100%;
     height: 100%;
-    /* z-index: 1; */
-    /*top: -115px;
-    left: -43px;*/
 }
+								/* z-index: 1; */
+								    /*top: -115px;
+								    left: -43px;*/
 
-.modal-img-input:checked + .modal-img-lbl > .img-background {
+/*.modal-img-input:checked + .modal-img-lbl > .img-background {
 	display: block;
 	position: fixed;
 	width: 100%;
@@ -193,9 +198,9 @@ h2 {
 	opacity: .8;
 	top: 0;
 	left: 0;
-}
+}*/
 /*chbox*/
-.modal-chbox-input:checked + .modal-chbox-lbl > .img-background {
+.modal-chbox-input:checked ~ .modal-chbox-lbl > .img-background {
 	display: block;
 	position: fixed;
 	width: 100%;
@@ -204,6 +209,7 @@ h2 {
 	opacity: .8;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 
 .close-img-input:checked + .modal-img-lbl > .img-background {
@@ -214,39 +220,40 @@ h2 {
 	display: none;
 }
 
-/*#modal-img:checked + .modal-img-lbl .slide-unit-img {
-	display: block;
+		/*#modal-img:checked + .modal-img-lbl .slide-unit-img {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}*/
+
+/*.modal-img-input:checked + .modal-img-lbl .slide-unit-img > img {
+	position: fixed; 	
+	width: 100%;  
+	object-fit: scale-down;
+	top: 0;
+	left: 0;
+} */
+								/*display: block;*/
+								/*height: 100%;
+/*chbox*/
+.modal-chbox-input:checked ~ .modal-chbox-lbl > .slide-unit-img > img {
+	/*display: block;*/
+	position: fixed;
 	width: 100%;
 	height: 100%;
-}*/
-
-.modal-img-input:checked + .modal-img-lbl .slide-unit-img > img {
-	/*display: block;*/
-	position: fixed;
-	width: 100%;
-	/*height: 100%;*/
 	object-fit: scale-down;
 	top: 0;
 	left: 0;
-}
-/*chbox*/
-.modal-chbox-input:checked + .modal-chbox-lbl .slide-unit-img > img {
-	/*display: block;*/
-	position: fixed;
-	width: 100%;
-	/*height: 100%;*/
-	object-fit: scale-down;
-	top: 0;
-	left: 0;
+	z-index: 10;
 }
 
-.modal-img-input:checked ~ .close-lbl {
+/*.modal-img-input:checked ~ .close-lbl {
 	display: block;
 	position: fixed;
 	width: 10%;
 	top: 2%;
 	left: 90%;
-}
+}*/
 /*chbox*/
 .modal-chbox-input:checked ~ .close-chbox-lbl {
 	display: block;
@@ -254,24 +261,25 @@ h2 {
 	width: 10%;
 	top: 2%;
 	left: 90%;
+	z-index: 2;
 }
 
-.modal-img-input:checked ~ .close-lbl > i {
+/*.modal-img-input:checked ~ .close-lbl > i {
 	font-size: 4em;
 	color: white;
-}
+}*/
 /*chbox*/
 .modal-chbox-input:checked ~ .close-chbox-lbl > i {
-	font-size: 4em;
+	font-size: 3em;
 	color: white;
 }
 
-/*.slide-unit-img-image:hover {
-	width: 100%;
-	height: 300px;
-	/*object-fit: scale-down;
-	vertical-align: middle;
-}*/
+						/*.slide-unit-img-image:hover {
+							width: 100%;
+							height: 300px;
+							/*object-fit: scale-down;
+							vertical-align: middle;
+						}*/
 
 /*[name^="shadow-"]:checked ~ .root-slider .slide-unit-content-li > .slide-unit-img > img {
 	max-height: 200px;
@@ -294,36 +302,36 @@ h2 {
     text-align: justify;
  }
 
+
+/*hover*/
 .slide-unit:hover > .slide-unit-content {	
 	position: absolute;
 	width: 136%;
-    /*height: 100%;*/
      z-index: 1; 
     top: -200px;
     left: -43px;
+    visibility: visible;
+    /*display: block;*/
 }
 
 .slide-unit:hover .slide-unit-descript {
 	display: block;
 }
 
-.modal-img-input:checked ~ .slide-unit-descript {
-	/*display: none;*/
+/*.modal-img-input:checked ~ .slide-unit-descript {
 	visibility: hidden;
-}
+}*/
 /*chbox*/
 .modal-chbox-input:checked ~ .slide-unit-descript {
-	/*display: none;*/
 	visibility: hidden;
 }
 
-.close-img-input:checked ~ .slide-unit-descript {
-	/*display: none;*/
+/*.close-img-input:checked ~ .slide-unit-descript {
 	visibility: visible;
-}
+}*/
 /*chbox*/
 .modal-chbox-input:not(:checked) ~ .slide-unit-descript {
-	/*display: none;*/
+	/*display: block;*/
 	visibility: visible;
 }
 
