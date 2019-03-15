@@ -261,7 +261,7 @@ h2 {
 	width: 10%;
 	top: 2%;
 	left: 90%;
-	z-index: 2;
+	z-index: 30;
 }
 
 /*.modal-img-input:checked ~ .close-lbl > i {
@@ -284,6 +284,18 @@ h2 {
 /*[name^="shadow-"]:checked ~ .root-slider .slide-unit-content-li > .slide-unit-img > img {
 	max-height: 200px;
 }*/
+
+.modal-chbox-input:checked ~ .modal-blind-layout {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	/*border: 3px solid red;
+	background-color: black;	
+	opacity: .7;*/
+}
 
 .slide-unit-descript {
 	display: none;
